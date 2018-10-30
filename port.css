@@ -1,0 +1,16 @@
+/* Navigation */
+nav {
+	
+	margin: .25em;
+}
+
+nav ul {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	text-align: center;
+	padding: 0.7em;
+}

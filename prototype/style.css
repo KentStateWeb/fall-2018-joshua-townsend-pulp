@@ -1,0 +1,23 @@
+body {
+  max-width: 1000px;
+  padding: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+div, section, main, aside, header, footer {
+  border: 1px solid lightgray;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: #F37423;
+}
+
+h2 {
+  color: #A02878;
+}
+
+p {
+  color: #585858;
+}

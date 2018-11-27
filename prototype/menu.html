@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Menu</title>
     <meta name="description" content="Page Description Goes Here">
+    <script type="text/javascript" src="js/myscript.js"></script>
   </head>
   <body>
 
@@ -15,7 +16,7 @@
         <nav>
               <ul>
                 <li><a href="index.html" class="used">HOME</a></li>
-                <li><a href="menu.html" class="active2">MENU</a></li>
+                <li><a href="menu.html" class="active">MENU</a></li>
                 <li><a href="franchise.html" class="used">FRANCHISE</a></li>
               </ul>
           </nav>
@@ -24,8 +25,8 @@
     <main>
       <h1>Smoothies</h1>
 
-      <h2>Classic</h2>
-      <div>
+      <button class="collapsible">Classic</button>
+      <div class="content">
       <h3>Raspberry Harmony</h3>
       <h3>Peach Beach</h3>
       <h3>Blueberry Heaven</h3>
@@ -37,8 +38,8 @@
       <h3>Strawberry Extreme</h3>
       </div>
 
-      <h2>Tropical</h2>
-      <div>
+      <button class="collapsible">Tropical</button>
+      <div class="content">
       <h3>Pulp Passion</h3>
       <h3>Island Cruiser</h3>
       <h3>Tropical Blast</h3>
@@ -47,29 +48,29 @@
       <h3>Pulp-Coolada</h3>
       </div>
 
-      <h2>Citrus</h2>
-      <div>
+      <button class="collapsible">Citrus</button>
+      <div class="content">
       <h3>Orange Chill</h3>
       <h3>Citrus Berry</h3>
       <h3>Samma Jamma</h3>
       </div>
 
-      <h2>Soy</h2>
-      <div>
+      <button class="collapsible">Soy</button>
+      <div class="content">
       <h3>Soy Strawberry Banana</h3>
       <h3>Soy Blueberry</h3>
       <h3>Soy Peach</h3>
       </div>
 
-      <h2>High Energy</h2>
-      <div>
+      <button class="collapsible">High Energy</button>
+      <div class="content">
       <h3>Mango Bomb</h3>
       <h3>Pulp Fusion</h3>
       <h3>Raging Berry</h3>
       </div>
 
-      <h2>Super</h2>
-      <div>
+      <button class="collapsible">Super</button>
+      <div class="content">
       <h3>Guava Burner</h3>
       <h3>Protein Packer</h3>
       <h3>Green Tea</h3>
@@ -77,8 +78,8 @@
       <h3>Hangover Relief</h3>
       </div>
 
-      <h2>Veggie 'n' Greens</h2>
-      <div>
+      <button class="collapsible">Veggie 'n' Greens</button>
+      <div class="content">
       <h3>Kale KA-POW!</h3>
       <h3>Carroty Chop</h3>
       <h3>Beet Bada-Boom</h3>
@@ -86,7 +87,8 @@
       </div>
 
       <h1>Wraps</h1>
-      <div>
+      <button class="collapsible">All Wraps</button>
+      <div class="content">
       <h3>Spicy Turkey</h3>
       <h3>White Albacore Tuna</h3>
       <h3>Roast Beef with Horseradish</h3>

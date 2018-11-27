@@ -1,7 +1,6 @@
 body {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
 }
 
 /* Header CSS */
@@ -136,32 +135,35 @@ li .used{
       border-top-right-radius: .6em;
   }
 
-  li a.active2 {
-      background-color: white;
-      color: #F37423;
-      padding-top: 0.08em;
-      padding-left: 1em;
-      padding-right: 1em;
-      border-top-left-radius: .6em;
-      border-top-right-radius: .6em;
-  }
-
-  li a.active3 {
-      background-color: white;
-      color: #F37423;
-      padding-top: 0.08em;
-      padding-left: 1em;
-      padding-right: 1em;
-      border-top-left-radius: .6em;
-      border-top-right-radius: .6em;
   }
 }
 
 /* Main Content Area */
+
+main img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  justify-content: center;
+  margin: 2em;
+}
+
 main {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  max-width: 100%;
+}
+
+.frank {
+  width: 85%;
+}
+
+.info {
+  width: 85%;
+  margin-left: 5em;
+  justify-content: center;
 }
 
 h1 {
@@ -190,6 +192,57 @@ main a {
   background: #A02878;
   padding: .7em;
   border-radius: 1.5em;
+}
+
+.button {
+  font-family: 'Quicksand', sans-serif;
+  color: #EFEB1A;
+  text-decoration: none;
+  background: #A02878;
+  padding: .7em;
+  border-radius: 1.5em;
+  border: 0;
+  font-size: 1em;
+}
+
+/* Menu Page */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #A02878;
+  color: #EFEB1A;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #EFEB1A;
+  color: #EFEB1A;
+  padding: 0 18px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #EFEB1A;
+    float: right;
+    margin-left: 5px;
+}
+
+.active2:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* Footer CSS */

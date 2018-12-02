@@ -1,6 +1,10 @@
 body {
   margin: 0 auto;
   padding: 0;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 /* Header CSS */
@@ -463,14 +467,16 @@ fieldset {
 
 /* Footer CSS */
 footer {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #F37423;
 }
 
 .foot {
   text-align: right;
   margin-right: 0.7em;
   padding-top: 1em;
-  color: black;
+  color: white;
 }

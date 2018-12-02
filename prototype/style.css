@@ -5,7 +5,7 @@ body {
 
 /* Header CSS */
 header {
-  background: #585858;
+  background: #F37423;
   margin: 0 auto;
   width: 100%;
 }
@@ -80,7 +80,7 @@ li a {
 li a.active {
     margin-top: 0;
     padding-top: 0;
-    background-color: #F37423;;
+    background-color: #F37423;
     color: white;
     padding-top: 0.08em;
     padding-bottom: 0.08em;
@@ -88,7 +88,7 @@ li a.active {
 }
 
 li a.active2 {
-    background-color: #F37423;;
+    background-color: #F37423;
     color: white;
     padding-top: 0.08em;
     padding-bottom: 0.08em;
@@ -96,7 +96,7 @@ li a.active2 {
 }
 
 li a.active3 {
-    background-color: #F37423;;
+    background-color: #F37423;
     color: white;
     padding-top: 0.08em;
     padding-bottom: 0.08em;
@@ -127,7 +127,7 @@ li .used{
 
   li a.active {
       background-color: white;
-      color: #F37423;
+      color: black;
       padding-top: 0.08em;
       padding-left: 1em;
       padding-right: 1em;
@@ -157,7 +157,11 @@ main {
 }
 
 .frank {
-  width: 85%;
+  width: 89%;
+}
+
+.form {
+  text-align: center;
 }
 
 .info {
@@ -168,7 +172,7 @@ main {
 
 h1 {
   font-family: 'Rubik', sans-serif;
-  color: #F37423;
+  color: #A02878;
 }
 
 h2 {
@@ -180,9 +184,17 @@ h3 {
   font-family: 'Quicksand', sans-serif;
 }
 
+h4 {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
   color: #585858;
+  line-height: 1.8em;
 }
 
 main a {
@@ -205,52 +217,89 @@ main a {
   font-size: 1em;
 }
 
-/* Menu Page */
+/* Menu toggle */
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  font-family: 'Quicksand', sans-serif;
-  background-color: #A02878;
-  color: #EFEB1A;
-  cursor: pointer;
-  padding: 18px;
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
   overflow: hidden;
-  background-color: #EFEB1A;
-  color: #EFEB1A;
-  padding: 0 18px;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  border-top: 2px solid black;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+.blue label {
+  background: #D75B0C;
+}
+.tab-content {
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  background: white;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  text-align: center;
+}
+.blue .tab-content {
+  background: white;
+}
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+.tab input[type=radio] + label::after {
+  content: "\25BC";
+}
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+.tab input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+.tab h3 {
+  margin-bottom: 1.4em;
 }
 
-.collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #EFEB1A;
-    float: right;
-    margin-left: 5px;
-}
-
-.active2:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
 
 /* Footer CSS */
 footer {
-  background: #585858;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 0.4em;
   width: 100%;
 }
 
@@ -258,5 +307,5 @@ footer h3 {
   text-align: right;
   margin-right: 0.7em;
   padding-top: 1em;
-  color: white;
+  color: black;
 }

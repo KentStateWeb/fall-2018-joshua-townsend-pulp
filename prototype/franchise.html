@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Franchise</title>
     <meta name="description" content="Page Description Goes Here">
+    <script src="myscript.js"></script>
   </head>
   <body>
 
@@ -29,28 +30,63 @@
         his team, located in Northeast Ohio, offer a comprehensive training program for all franchise operations to get your whole team
         ready. Our team will also assist with site selection, location preparation and marketing! If you encounter any problems along the
         way, we will always be available to help. If you’re serious about joining the Pulp franchisee family, fill out the form below.</p>
-      <h3>Infographic about fees</h3>
 
-      <div class="form">
-      <h2>Contact Form</h2>
-      <h4>All info is required</h4>
-      <form>
-      <h3>Your Name</h3> <input type="text" name="name"><br>
-      <h3>Address</h3> <input type="text" name="add"><br>
-      <h3>City</h3> <input type="text" name="city"><br>
-      <h3>State</h3> <input type="text" name="state"><br>
-      <h3>Zip Code</h3> <input type="text" name="zip"><br>
-      <h3>Phone</h3> <input type="text" name="num"><br>
-      <h3>Email</h3> <input type="text" name="email"><br>
-      <h3>Desired Location</h3> <input type="text" name="loca"><br>
-      <br><br>
-      <input class="button" type="submit" value="Submit">
+<section class="infoflex">
+      <section class="lastblast">
+      <div class="graph">
+      <h2 class="graph2">Franchising Quick Info</h2>
+      <h3 class="graph2">Franchise Fee</h3>
+      <h4 class="graph2">$20,000 for 1st Store</h4>
+      <h3 class="graph2">Royalty Fee</h3>
+      <h4 class="graph2">5% of gross sales</h4>
+      <h3 class="graph2">Term of Franchise Agreement</h3>
+      <h4 class="graph2">10 years</h4>
+      <h3 class="graph2">Total Initial Investment</h3>
+      <h4 class="graph2">$74,150 to $214,700</h4>
+      </div>
+    </section>
+
+    <div class="container">
+      <form id="contact" action="" method="post">
+        <h3>CONTACT FORM</h3>
+        <h4>All information is required</h4>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Address" type="address" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your City" type="city" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your State" type="state" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Zip Code" type="zip" tabindex="5" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="6" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Phone Number" type="tel" tabindex="7" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Desired Location Info...." tabindex="8" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
       </form>
+
+
     </div>
+</section>
+
     </main>
 
     <footer>
-      <h3>Contact Us</h3>
+      <h3 class="foot">Contact Us</h3>
     </footer>
 
       <link href="style.css" rel="stylesheet" type="text/css" media="screen" />

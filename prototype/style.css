@@ -173,11 +173,13 @@ main {
 h1 {
   font-family: 'Rubik', sans-serif;
   color: #A02878;
+  text-transform: uppercase;
 }
 
 h2 {
   color: #A02878;
   font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -198,8 +200,10 @@ p {
 }
 
 main a {
+  cursor:pointer;
   font-family: 'Quicksand', sans-serif;
-  color: #EFEB1A;
+  color: white;
+  text-shadow: #000 0px 0px 1px;
   text-decoration: none;
   background: #A02878;
   padding: .7em;
@@ -215,6 +219,10 @@ main a {
   border-radius: 1.5em;
   border: 0;
   font-size: 1em;
+}
+
+.banner {
+  width: 100%;
 }
 
 /* Menu toggle */
@@ -296,6 +304,163 @@ main a {
 }
 
 
+/* Franchising Infographic */
+.graph {
+  text-align: center;
+  padding: 1em;
+  background: #A02878;
+  color: white;
+  width: 20em;
+  border-radius: 2.5em;
+  display: inline-block;
+  max-width:400px;
+}
+
+.graph h2 {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.graph2 h3 {
+  color: white;
+}
+
+.lastblast {
+  text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    margin:0 auto;
+  	position:relative;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+.infoflex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.graph {
+  margin-top: 10em;
+}
+}
+
+/* Contact Form */
+
+
+* {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+
+.container {
+	max-width:400px;
+	width:100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+
+#contact h3 {
+	color: #A02878;
+	display: block;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+	font-size: 30px;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="address"], #contact input[type="city"], #contact input[type="state"], #contact input[type="zip"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="address"]:hover, #contact input[type="city"]:hover, #contact input[type="state"]:hover, #contact input[type="zip"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	border:none;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-shadow: #000 0px 0px 1px;
+  text-decoration: none;
+  background: #A02878;
+  padding: .7em;
+  border-radius: 1.5em;
+}
+
+#contact button[type="submit"]:hover {
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+ font-family: 'Montserrat', sans-serif;
+}
+:-moz-placeholder {
+ color:#888;
+ font-family: 'Montserrat', sans-serif;
+}
+::-moz-placeholder {
+ color:#888;
+ font-family: 'Montserrat', sans-serif;
+}
+:-ms-input-placeholder {
+ color:#888;
+ font-family: 'Montserrat', sans-serif;
+}
+
 /* Footer CSS */
 footer {
   margin: 0 auto;
@@ -303,7 +468,7 @@ footer {
   width: 100%;
 }
 
-footer h3 {
+.foot {
   text-align: right;
   margin-right: 0.7em;
   padding-top: 1em;

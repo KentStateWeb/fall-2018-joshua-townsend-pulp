@@ -507,4 +507,7 @@ footer {
   margin-right: 0.7em;
   padding-top: 1em;
   color: white;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
 }

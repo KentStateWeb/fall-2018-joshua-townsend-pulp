@@ -236,6 +236,10 @@ main a {
   margin-right: auto;
   max-width: 100%;
 }
+
+.magic {
+  max-width: 100%;
+}
 /* Menu toggle */
 
 /* Acordeon styles */

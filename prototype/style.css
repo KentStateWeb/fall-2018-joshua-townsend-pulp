@@ -153,6 +153,16 @@ main img {
   margin: 2em;
 }
 
+.menu {
+width: 100%;
+max-width: 100%;
+height: auto;
+display: block;
+justify-content: center;
+margin: 0;
+margin-bottom: -1.4em;
+}
+
 main {
   margin: 0 auto;
   padding: 0;

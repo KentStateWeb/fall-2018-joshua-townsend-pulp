@@ -1,0 +1,48 @@
+h1 {
+  font-family: 'Rubik', sans-serif;
+  color: #A02878;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #A02878;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  cursor:pointer;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-shadow: #000 0px 0px 1px;
+  text-decoration: none;
+  background: #F37423;
+  padding: 0.8em;
+  border-radius: 1.5em;
+}
+
+.border {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body {
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+header {
+  background: #F37423;
+  margin: 0 auto;
+  width: 100%;
+  height: 175px;
+  position: relative;
+}
+
+header img {
+  width: 15%;
+  height: auto;
+  padding: 1em;
+  padding-bottom: 0em;
+  margin-bottom: -3em;
+}

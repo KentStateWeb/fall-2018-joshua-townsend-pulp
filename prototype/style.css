@@ -346,7 +346,7 @@ main a {
   text-align: center;
   padding: 1em;
   background: #A02878;
-  color: white;
+  color: white !important;
   width: 20em;
   border-radius: 2.5em;
   display: inline-block;
@@ -360,6 +360,10 @@ main a {
 }
 
 .graph2 h3 {
+  color: white;
+}
+
+.graph2 {
   color: white;
 }
 

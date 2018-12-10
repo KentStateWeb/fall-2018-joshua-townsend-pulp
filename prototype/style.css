@@ -33,6 +33,7 @@ header h1 {
 header img {
   width: 35%;
   height: auto;
+  max-height: 130px;
   padding: 1em;
   display: block;
   margin-left: auto;

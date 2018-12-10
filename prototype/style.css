@@ -310,7 +310,7 @@ p {
 }
 /* :checked */
 .tab input:checked ~ .tab-content {
-  max-height: 100vh;
+  max-height: 100%;
 }
 /* Icon */
 .tab label::after {
@@ -339,7 +339,7 @@ p {
   transform: rotateX(180deg);
 }
 .tab h3 {
-  margin-bottom: 1.4em;
+  margin-bottom: 1em;
 }
 
 

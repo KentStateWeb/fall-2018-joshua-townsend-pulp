@@ -46,3 +46,7 @@ header img {
   padding-bottom: 0em;
   margin-bottom: -3em;
 }
+
+.imagecontainer {
+  height: auto;
+}

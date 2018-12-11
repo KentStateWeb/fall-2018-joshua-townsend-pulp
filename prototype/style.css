@@ -395,6 +395,15 @@ p {
 }
 }
 
+.indent {
+  margin-top: -0.6em;
+  margin-left: 0.4em;
+}
+
+.incline {
+  margin-left: 0.1em;
+}
+
 /* Contact Form */
 
 
